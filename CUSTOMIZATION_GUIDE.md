@@ -6,14 +6,34 @@ Open the named file in VS Code, then use `Ctrl + G` on Windows/Linux or `Cmd + G
 
 | Line | Replace this placeholder | With |
 | --- | --- | --- |
-| 13 | `[INSERT YOUR INITIALS HERE]` | Your initials for the navigation logo. |
-| 25 | `[INSERT YOUR ROLE OR TAGLINE HERE]` | A short description of yourself. |
-| 26 | `[INSERT YOUR NAME HERE]` | Your full name. |
 | 27 | `[INSERT YOUR CODING JOURNEY INTRODUCTION HERE]` | A short welcome introduction. |
-| 37 | `[INSERT YOUR ABOUT ME HEADING HERE]` | Your About Me heading. |
-| 40 | `[INSERT YOUR BIOGRAPHY HERE]` | Your background and story. |
-| 41 | `[INSERT YOUR CODING JOURNEY GOALS HERE]` | Your goals for learning or coding. |
-| 48 | `[INSERT YEAR HERE]` and `[INSERT YOUR NAME HERE]` | The current year and your name. |
+| 41 | `[INSERT YOUR BIOGRAPHY HERE]` | Your background and story. |
+| 42 | `[INSERT YOUR CODING JOURNEY GOALS HERE]` | Your goals for learning or coding. |
+| 49 | `[INSERT YOUR EXPLORE SECTION HEADING HERE]` | A heading above your three preview tiles. |
+| 53 | `[INSERT PROJECT PREVIEW IMAGE HERE]` | A preview image placeholder for your selected project. |
+| 56 | `[INSERT PROJECT TITLE HERE]` | The project name shown on the Home page tile. |
+| 61 | `[INSERT SKILLS PREVIEW IMAGE HERE]` | A preview image placeholder for Skills. |
+| 64 | `[INSERT SKILLS TILE HEADING HERE]` | A title for the Skills preview tile. |
+| 69 | `[INSERT ACHIEVEMENTS PREVIEW IMAGE HERE]` | A preview image placeholder for Achievements. |
+| 72 | `[INSERT ACHIEVEMENTS TILE HEADING HERE]` | A title for the Achievements preview tile. |
+
+### Adding your full Home-page background image
+
+1. Create an `images` folder beside your HTML files.
+2. Add your landscape image to that folder, for example `images/home-background.jpg`.
+3. In `style.css`, replace `[INSERT HERO BACKGROUND IMAGE FILE NAME HERE]` on line 11 with `home-background.jpg`.
+
+The image will fill the complete landing area. A dark overlay keeps the white text easy to read.
+
+### Adding real images to the Home-page tiles
+
+Replace the complete image placeholder `<div>` on line 53, 61, or 69 with:
+
+```html
+<img src="images/[INSERT IMAGE FILE NAME HERE]" alt="[INSERT IMAGE DESCRIPTION HERE]">
+```
+
+Use one image for Projects, one for Skills, and one for Achievements.
 
 ## 2. Projects Page — `projects.html`
 
@@ -83,11 +103,12 @@ To add more achievements, copy a `<li>...</li>` line in the correct category and
 ## 5. Site-Wide Text and Style
 
 - Navigation initials: line 13 in each HTML page.
-- Footer year and name: `index.html` line 48, `projects.html` line 78, `skills.html` line 97, and `achievements.html` line 71.
+- Footer year and name: `index.html` line 82, `projects.html` line 78, `skills.html` line 97, and `achievements.html` line 71.
 - Text size and colors: edit `style.css`.
-  - Main heading size: line 60.
-  - Section heading size: line 62.
-  - Regular introduction text size: line 64.
-  - Navigation text size: line 48.
+  - Home background image filename: line 11.
+  - Main heading size: line 71.
+  - Section heading size: line 73.
+  - Regular introduction text size: line 75.
+  - Navigation text size: line 49.
 
 Line numbers are correct for the current version of the website. They will change if you add or remove lines later.

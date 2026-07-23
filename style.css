@@ -8,6 +8,7 @@
   --cyan: #31e8ff;
   --violet: #9b6cff;
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
+  --hero-image: url("images/[INSERT HERO BACKGROUND IMAGE FILE NAME HERE]");
 }
 
 * { box-sizing: border-box; }
@@ -51,7 +52,17 @@ a { color: inherit; }
 
 .section { padding-block: clamp(4.5rem, 10vw, 8rem); }
 
-.hero { min-height: calc(100vh - 4.6rem); display: grid; align-content: center; max-width: 900px; }
+.hero { min-height: calc(100svh - 4.6rem); display: grid; }
+.hero--image {
+  background-image:
+    linear-gradient(90deg, rgba(8, 9, 13, 0.88) 0%, rgba(8, 9, 13, 0.7) 45%, rgba(8, 9, 13, 0.5) 100%),
+    linear-gradient(0deg, rgba(8, 9, 13, 0.72), rgba(8, 9, 13, 0.12)),
+    var(--hero-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content { display: grid; align-content: center; max-width: 900px; padding-block: clamp(4.5rem, 10vw, 8rem); }
 
 .eyebrow, .card-label { margin: 0 0 0.8rem; color: var(--cyan); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
 
@@ -74,6 +85,15 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 .about-panel, .info-panel { border: 1px solid var(--line); border-radius: 1rem; background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); box-shadow: var(--shadow); }
 .about-panel { max-width: 860px; padding: clamp(1.4rem, 4vw, 3rem); color: var(--muted); font-size: 0.95rem; }
 .about-panel p:last-child { margin-bottom: 0; }
+.explore-section { padding-top: 1rem; }
+.home-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.home-tile { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 1rem; color: var(--text); background: var(--surface); box-shadow: var(--shadow); text-decoration: none; transition: transform 200ms ease, border-color 200ms ease; }
+.home-tile:hover { transform: translateY(-5px); border-color: rgba(49, 232, 255, 0.55); }
+.tile-image { min-height: 185px; }
+.home-tile > img { display: block; width: 100%; height: 185px; object-fit: cover; }
+.tile-content { display: flex; flex: 1; flex-direction: column; padding: 1.35rem; }
+.tile-content h3 { margin: 0 0 1.35rem; font-size: 1.18rem; line-height: 1.22; letter-spacing: -0.025em; }
+.tile-link { margin-top: auto; color: var(--cyan); font-size: 0.82rem; font-weight: 800; }
 
 .page-intro { padding-bottom: 2rem; }
 .page-intro h1 { max-width: 18ch; }
@@ -82,6 +102,7 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 .project-card { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: var(--shadow); transition: transform 200ms ease, border-color 200ms ease; }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(49, 232, 255, 0.55); }
 .media-slot, .gallery-item { margin: 0; background: #0d0f16; }
+.media-slot > img, .gallery-item > img { display: block; width: 100%; height: 210px; object-fit: cover; }
 .image-placeholder { display: grid; min-height: 210px; place-items: center; padding: 1rem; color: var(--cyan); border: 1px dashed rgba(49, 232, 255, 0.45); background: linear-gradient(135deg, rgba(49,232,255,0.09), rgba(155,108,255,0.11)); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.07em; text-align: center; transition: filter 180ms ease, transform 180ms ease; }
 .project-card:hover .image-placeholder, .gallery-item:hover .image-placeholder { filter: brightness(1.18); transform: scale(1.025); }
 figcaption { padding: 0.55rem 0.8rem; color: var(--muted); font-size: 0.72rem; overflow-wrap: anywhere; }
@@ -94,6 +115,7 @@ figcaption { padding: 0.55rem 0.8rem; color: var(--muted); font-size: 0.72rem; o
 .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .gallery-item { overflow: hidden; border: 1px solid var(--line); border-radius: 0.8rem; }
 .gallery-item .image-placeholder { min-height: 250px; }
+.gallery-item > img { height: 250px; }
 .skills-section, .achievements-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; padding-top: 2.5rem; }
 .info-panel { padding: clamp(1.4rem, 4vw, 2.3rem); }
 .info-panel h2 { font-size: clamp(1.25rem, 2.5vw, 1.7rem); }
@@ -108,6 +130,7 @@ figcaption { padding: 0.55rem 0.8rem; color: var(--muted); font-size: 0.72rem; o
 
 @media (max-width: 780px) {
   .projects-grid { grid-template-columns: 1fr; }
+  .home-tiles { grid-template-columns: 1fr; }
   .skills-section, .achievements-grid { grid-template-columns: 1fr; }
 }
 
