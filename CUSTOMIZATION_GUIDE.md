@@ -9,9 +9,12 @@ Open the named file in VS Code, then use `Ctrl + G` on Windows/Linux or `Cmd + G
 | 27 | `[INSERT YOUR CODING JOURNEY INTRODUCTION HERE]` | A short welcome introduction. |
 | 41 | `[INSERT YOUR BIOGRAPHY HERE]` | Your background and story. |
 | 42 | `[INSERT YOUR CODING JOURNEY GOALS HERE]` | Your goals for learning or coding. |
-| 48 | `[INSERT PROJECT PREVIEW IMAGE HERE]` | A full-width Projects slide image placeholder. |
-| 52 | `[INSERT SKILLS PREVIEW IMAGE HERE]` | A full-width Skills slide image placeholder. |
-| 56 | `[INSERT ACHIEVEMENTS PREVIEW IMAGE HERE]` | A full-width Achievements slide image placeholder. |
+| 49 | `[INSERT PROJECT PREVIEW IMAGE HERE]` | A preview image placeholder for your selected project. |
+| 52 | `[INSERT PROJECT TITLE HERE]` | The project name shown on the Home page tile. |
+| 57 | `[INSERT SKILLS PREVIEW IMAGE HERE]` | A preview image placeholder for Skills. |
+| 60 | `[INSERT SKILLS TILE HEADING HERE]` | A title for the Skills preview tile. |
+| 65 | `[INSERT ACHIEVEMENTS PREVIEW IMAGE HERE]` | A preview image placeholder for Achievements. |
+| 68 | `[INSERT ACHIEVEMENTS TILE HEADING HERE]` | A title for the Achievements preview tile. |
 
 ### Adding your full Home-page background image
 
@@ -21,12 +24,12 @@ Open the named file in VS Code, then use `Ctrl + G` on Windows/Linux or `Cmd + G
 
 The image will fill the complete landing area. A dark overlay keeps the white text easy to read.
 
-### Adding real images to the Home-page slides
+### Adding real images to the Home-page tiles
 
-Replace the complete image placeholder `<div>` on line 48, 52, or 56 with:
+Replace the complete image placeholder `<div>` on line 49, 57, or 65 with:
 
 ```html
-<img class="slide-image" src="images/[INSERT IMAGE FILE NAME HERE]" alt="[INSERT IMAGE DESCRIPTION HERE]">
+<img src="images/[INSERT IMAGE FILE NAME HERE]" alt="[INSERT IMAGE DESCRIPTION HERE]">
 ```
 
 Use one image for Projects, one for Skills, and one for Achievements.
@@ -99,7 +102,7 @@ To add more achievements, copy a `<li>...</li>` line in the correct category and
 ## 5. Site-Wide Text and Style
 
 - Navigation initials: line 13 in each HTML page.
-- Footer year and name: `index.html` line 64, `projects.html` line 78, `skills.html` line 97, and `achievements.html` line 71.
+- Footer year and name: `index.html` line 78, `projects.html` line 78, `skills.html` line 97, and `achievements.html` line 71.
 - Text size and colors: edit `style.css`.
   - Home background image filename: line 11.
   - Main heading size: line 71.
