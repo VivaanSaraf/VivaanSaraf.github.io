@@ -89,7 +89,7 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 .home-tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.2rem; }
 .home-tile-group { display: flex; flex-direction: column; gap: 0.8rem; }
 .home-tile-group:nth-child(1) { grid-column: span 2; }
-.home-tile-group:nth-child(1) .home-tile { aspect-ratio: 4 / 3; min-height: unset; max-height: 420px; }
+.home-tile-group:nth-child(1) .home-tile { height: 420px; min-height: unset; }
 .home-tile-title { margin: 0; color: var(--text); font-size: clamp(1.9rem, 6.5vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em; text-align: left; }
 .home-tile {
   position: relative;
