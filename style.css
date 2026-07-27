@@ -54,7 +54,9 @@ a { color: inherit; }
 
 .hero { min-height: calc(100svh - 4.6rem); display: grid; }
 .hero--image {
-  background-image: var(--hero-image);
+  background-image:
+    linear-gradient(rgba(8, 9, 13, 0.35), rgba(8, 9, 13, 0.35)),
+    var(--hero-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
