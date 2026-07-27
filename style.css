@@ -86,12 +86,12 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 .about-panel { max-width: 860px; padding: clamp(1.4rem, 4vw, 3rem); color: var(--muted); font-size: 0.95rem; }
 .about-panel p:last-child { margin-bottom: 0; }
 .explore-section { padding-top: 1rem; }
-.home-tiles { display: flex; flex-direction: column; gap: 1.5rem; }
+.home-tiles { display: flex; flex-direction: column; gap: 2.2rem; }
+.home-tile-group { display: flex; flex-direction: column; gap: 0.8rem; }
+.home-tile-title { margin: 0; color: var(--text); font-size: clamp(1.2rem, 3.2vw, 1.55rem); font-weight: 800; letter-spacing: -0.02em; text-align: left; }
 .home-tile {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: clamp(160px, 25vh, 220px);
   overflow: hidden;
   border: 1px solid var(--line);
@@ -110,12 +110,12 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
   position: absolute;
   inset: 0;
   content: "";
-  background: linear-gradient(0deg, rgba(8, 9, 13, 0.75), rgba(8, 9, 13, 0.35));
+  background: rgba(8, 9, 13, 0.2);
   z-index: 2;
   transition: background 180ms ease;
 }
 .home-tile:hover::after {
-  background: linear-gradient(0deg, rgba(8, 9, 13, 0.65), rgba(8, 9, 13, 0.25));
+  background: rgba(8, 9, 13, 0.05);
 }
 .home-tile > .tile-image,
 .home-tile > img {
@@ -130,15 +130,6 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 .home-tile:hover > .tile-image,
 .home-tile:hover > img {
   transform: scale(1.02);
-}
-.home-tile .tile-title {
-  position: relative;
-  z-index: 3;
-  color: var(--text);
-  font-size: clamp(1.6rem, 5vw, 2.8rem);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.65);
 }
 
 .page-intro { padding-bottom: 2rem; }
