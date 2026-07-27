@@ -88,7 +88,7 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 .explore-section { padding-top: 1rem; }
 .home-tiles { display: flex; flex-direction: column; gap: 2.2rem; }
 .home-tile-group { display: flex; flex-direction: column; gap: 0.8rem; }
-.home-tile-title { margin: 0; color: var(--text); font-size: clamp(1.5rem, 4.5vw, 2.1rem); font-weight: 800; letter-spacing: -0.02em; text-align: left; }
+.home-tile-title { margin: 0; color: var(--text); font-size: clamp(1.9rem, 6.5vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em; text-align: left; }
 .home-tile {
   position: relative;
   display: flex;
