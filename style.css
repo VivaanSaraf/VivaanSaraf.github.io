@@ -86,8 +86,10 @@ h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 .about-panel { max-width: 860px; padding: clamp(1.4rem, 4vw, 3rem); color: var(--muted); font-size: 0.95rem; }
 .about-panel p:last-child { margin-bottom: 0; }
 .explore-section { padding-top: 1rem; }
-.home-tiles { display: flex; flex-direction: column; gap: 2.2rem; }
+.home-tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.2rem; }
 .home-tile-group { display: flex; flex-direction: column; gap: 0.8rem; }
+.home-tile-group:nth-child(1) { grid-column: span 2; }
+.home-tile-group:nth-child(1) .home-tile { min-height: clamp(240px, 40vh, 380px); }
 .home-tile-title { margin: 0; color: var(--text); font-size: clamp(1.9rem, 6.5vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em; text-align: left; }
 .home-tile {
   position: relative;
@@ -167,7 +169,9 @@ figcaption { padding: 0.55rem 0.8rem; color: var(--muted); font-size: 0.72rem; o
 
 @media (max-width: 780px) {
   .projects-grid { grid-template-columns: 1fr; }
-  .home-tiles { grid-template-columns: 1fr; }
+  .home-tiles { grid-template-columns: 1fr; gap: 1.8rem; }
+  .home-tile-group:nth-child(1) { grid-column: span 1; }
+  .home-tile-group:nth-child(1) .home-tile { min-height: clamp(200px, 30vh, 280px); }
   .skills-section, .achievements-grid { grid-template-columns: 1fr; }
 }
 
