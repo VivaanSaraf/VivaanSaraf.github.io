@@ -49,12 +49,13 @@ Add another skill by copying one `<li>...</li>` line inside its category.
 
 | Line | What you can change |
 | --- | --- |
-| 35–36 | Add exact VEX IQ event names, placements, or years if you want them shown. The current wording claims participation only. |
-| 44–48 | MindChamp course certificates, grouped by topic. |
-| 55 | Replace `[ADD VERIFIED SCHOOL AWARD HERE]` when you have an award to list. |
-| 62 | Replace `[ADD HACKATHON WHEN COMPLETED]` after a future event. |
+| 35–38 | VEX IQ and Coolest Projects India competition entries. Add the specific project or event details you want to show. |
+| 40 | Replace `[ADD VERIFIED COMPETITION RESULTS HERE]` with your exact placing or award for each event. |
+| 47–51 | MindChamp course certificates, grouped by topic. |
+| 58 | Replace `[ADD VERIFIED SCHOOL AWARD HERE]` when you have an award to list. |
+| 65 | Replace `[ADD HACKATHON WHEN COMPLETED]` after a future event. |
 
-The certificate names and years were checked against your local certificate PDFs. The album and your messages support the VEX IQ history; no competition placement or school award has been assumed.
+The certificate names and years were checked against your local certificate PDFs. Your VEX IQ participation certificate appears in a local photo, and you told me you took part in Coolest Projects India 2026. The Hyderabad location was checked against event reporting. No competition placement or school award has been assumed.
 
 ## Images and styling
 
