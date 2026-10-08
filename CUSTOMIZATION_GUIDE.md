@@ -1,110 +1,61 @@
-# Portfolio Customization Guide
+# Portfolio customization guide
 
-Open the named file in VS Code, then use `Ctrl + G` on Windows/Linux or `Cmd + G` on Mac to jump directly to a line number. Replace only the text inside square brackets (`[ ... ]`).
+Open a file in VS Code and press `Cmd + G` on Mac (`Ctrl + G` on Windows/Linux) to jump to a line. The line numbers below match this branch and will move if you edit the files.
 
-## 1. Home Page — `index.html`
+## Home — `index.html`
 
-| Line | Replace this placeholder | With |
-| --- | --- | --- |
-| 27 | `[INSERT YOUR CODING JOURNEY INTRODUCTION HERE]` | A short welcome introduction. |
-| 41 | `[INSERT YOUR BIOGRAPHY HERE]` | Your background and story. |
-| 42 | `[INSERT YOUR CODING JOURNEY GOALS HERE]` | Your goals for learning or coding. |
-| 48 | `[INSERT PROJECT PREVIEW IMAGE HERE]` | A preview image placeholder for your selected project. |
-| 52 | `[INSERT SKILLS PREVIEW IMAGE HERE]` | A preview image placeholder for Skills. |
-| 56 | `[INSERT ACHIEVEMENTS PREVIEW IMAGE HERE]` | A preview image placeholder for Achievements. |
+| Line | What you can change |
+| --- | --- |
+| 27 | The short welcome sentence under your name. |
+| 41–43 | Your biography, current robotics work, and the link to your shared photo journal. |
+| 50 | Projects tile photo. |
+| 54 | Skills tile photo. |
+| 58 | Achievements tile photo. |
 
-### Adding your full Home-page background image
+The full landing-page background is set by `--hero-image` on line 11 of `style.css`. Replace its path if you choose another landscape photo.
 
-1. Create an `images` folder beside your HTML files.
-2. Add your landscape image to that folder, for example `images/home-background.jpg`.
-3. In `style.css`, replace `[INSERT HERO BACKGROUND IMAGE FILE NAME HERE]` on line 11 with `home-background.jpg`.
+## Projects — `projects.html`
 
-The image will fill the complete landing area. A dark overlay keeps the white text easy to read.
+| Line | What you can change |
+| --- | --- |
+| 34–42 | VEX IQ photo, summary, and photo-journal button. |
+| 48–56 | SO-101 photo, summary, and photo-journal button. |
+| 62 | Replace `[ADD OPEN DUCK MINI PHOTO HERE]` with an actual image. |
+| 67–70 | Open Duck Mini V2 details and photo-journal button. |
 
-### Adding real images to the Home-page tiles
-
-Replace the complete image placeholder `<div>` on line 48, 52, or 56 with:
-
-```html
-<img src="images/[INSERT IMAGE FILE NAME HERE]" alt="[INSERT IMAGE DESCRIPTION HERE]">
-```
-
-Use one image for Projects, one for Skills, and one for Achievements.
-
-## 2. Projects Page — `projects.html`
-
-| Line | Replace this placeholder | With |
-| --- | --- | --- |
-| 26 | `[INSERT YOUR PROJECTS PAGE HEADING HERE]` | Your Projects page heading. |
-| 27 | `[INSERT YOUR PROJECTS PAGE INTRODUCTION HERE]` | A short overview of your projects. |
-| 34 | `[INSERT PROJECT ONE IMAGE HERE]` | Your first project image placeholder or image. |
-| 35 | `[INSERT PROJECT ONE IMAGE PATH HERE]` | Your first project image file path. |
-| 39 | `[INSERT PROJECT TITLE HERE]` | Your first project name. |
-| 40 | `[INSERT TECH STACK USED HERE]` | Technologies used in your first project. |
-| 41 | `[INSERT PROJECT DESCRIPTION HERE]` | Your first project description. |
-| 42 | `[INSERT REPOSITORY LINK HERE]` and `href="#"` | Your repository button text and repository URL. |
-| 48 | `[INSERT PROJECT TWO IMAGE HERE]` | Your second project image placeholder or image. |
-| 49 | `[INSERT PROJECT TWO IMAGE PATH HERE]` | Your second project image file path. |
-| 53 | `[INSERT PROJECT TITLE HERE]` | Your second project name. |
-| 54 | `[INSERT TECH STACK USED HERE]` | Technologies used in your second project. |
-| 55 | `[INSERT PROJECT DESCRIPTION HERE]` | Your second project description. |
-| 56 | `[INSERT REPOSITORY LINK HERE]` and `href="#"` | Your repository button text and repository URL. |
-| 62 | `[INSERT PROJECT THREE IMAGE HERE]` | Your third project image placeholder or image. |
-| 63 | `[INSERT PROJECT THREE IMAGE PATH HERE]` | Your third project image file path. |
-| 67 | `[INSERT PROJECT TITLE HERE]` | Your third project name. |
-| 68 | `[INSERT TECH STACK USED HERE]` | Technologies used in your third project. |
-| 69 | `[INSERT PROJECT DESCRIPTION HERE]` | Your third project description. |
-| 70 | `[INSERT REPOSITORY LINK HERE]` and `href="#"` | Your repository button text and repository URL. |
-
-### Adding a real project image
-
-1. Create an `images` folder beside your HTML files.
-2. Put your image inside it, for example `images/project-one.jpg`.
-3. Replace the complete `<div class="image-placeholder">...</div>` on lines 34, 48, or 62 with:
+To add your Open Duck photo, put the file in `images/` and replace the whole placeholder `<div>` on line 62 with:
 
 ```html
-<img src="images/[INSERT IMAGE FILE NAME HERE]" alt="[INSERT IMAGE DESCRIPTION HERE]">
+<img src="images/your-open-duck-photo.jpg" alt="Open Duck Mini V2 robot" loading="lazy">
 ```
 
-4. Keep the `<figcaption>` underneath if you want the image path text to remain visible; otherwise delete that one `<figcaption>` line.
+The three buttons currently open your shared Google Photos album. When you have a separate repository or project gallery, replace the relevant button's `href` with its exact URL and update its text.
 
-## 3. Skills Page — `skills.html`
+## Skills — `skills.html`
 
-| Line | Replace this placeholder | With |
-| --- | --- | --- |
-| 26 | `[INSERT YOUR SKILLS PAGE HEADING HERE]` | Your Skills page heading. |
-| 27 | `[INSERT YOUR SKILLS PAGE INTRODUCTION HERE]` | A short introduction to your skills. |
-| 32 | `[INSERT YOUR IMAGE GALLERY HEADING HERE]` | A title for the skills image gallery. |
-| 35–38 | Gallery image placeholders | Four skills-related images, descriptions, and file paths. |
-| 47–50 | `[INSERT LANGUAGE OR TOOL HERE]` | Programming languages you use. |
-| 57–60 | `[INSERT WEB DEVELOPMENT SKILL HERE]` | Your web development skills. |
-| 67–70 | `[INSERT ROBOTICS SKILL HERE]` | Your robotics skills. |
-| 77–80 | `[INSERT GIT OR GITHUB SKILL HERE]` | Your Git and GitHub skills. |
-| 87–90 | `[INSERT TOOL HERE]` | Tools, platforms, or hardware you use. |
+| Line | What you can change |
+| --- | --- |
+| 27 | Introductory sentence. |
+| 35–38 | Four gallery images and captions. |
+| 45–49 | Programming languages. |
+| 54–58 | Web development. |
+| 63–68 | Robotics. |
+| 73–77 | Git and GitHub. |
+| 82–87 | Tools you use. |
 
-To add more skills to any category, copy one nearby `<li>...</li>` line, paste it before the closing `</ul>`, and replace its bracketed text.
+Add another skill by copying one `<li>...</li>` line inside its category.
 
-## 4. Achievements Page — `achievements.html`
+## Achievements — `achievements.html`
 
-| Line | Replace this placeholder | With |
-| --- | --- | --- |
-| 27 | `[INSERT YOUR ACHIEVEMENTS PAGE INTRODUCTION HERE]` | A short introduction to your achievements. |
-| 35–37 | `[INSERT COMPETITION ACHIEVEMENT HERE]` | Competition names, placements, or results. |
-| 44–46 | `[INSERT CERTIFICATION HERE]` | Certification names and dates. |
-| 53–55 | `[INSERT SCHOOL AWARD HERE]` | Awards received at school. |
-| 62–64 | `[INSERT FUTURE HACKATHON HERE]` | Future hackathon participation or awards. |
+| Line | What you can change |
+| --- | --- |
+| 35–36 | Add exact VEX IQ event names, placements, or years if you want them shown. The current wording claims participation only. |
+| 44–48 | MindChamp course certificates, grouped by topic. |
+| 55 | Replace `[ADD VERIFIED SCHOOL AWARD HERE]` when you have an award to list. |
+| 62 | Replace `[ADD HACKATHON WHEN COMPLETED]` after a future event. |
 
-To add more achievements, copy a `<li>...</li>` line in the correct category and paste it before that category's closing `</ul>`.
+The certificate names and years were checked against your local certificate PDFs. The album and your messages support the VEX IQ history; no competition placement or school award has been assumed.
 
-## 5. Site-Wide Text and Style
+## Images and styling
 
-- Navigation initials: line 13 in each HTML page.
-- Footer year and name: `index.html` line 78, `projects.html` line 78, `skills.html` line 97, and `achievements.html` line 71.
-- Text size and colors: edit `style.css`.
-  - Home background image filename: line 11.
-  - Main heading size: line 71.
-  - Section heading size: line 73.
-  - Regular introduction text size: line 75.
-  - Navigation text size: line 49.
-
-Line numbers are correct for the current version of the website. They will change if you add or remove lines later.
+The site uses photos already in `images/`, plus a link to the Google Photos album you shared. It does not rely on the album to load the site's embedded photos. All pages share `style.css`; update colors at the top of that file and text sizes in the heading, navigation, and card rules.
