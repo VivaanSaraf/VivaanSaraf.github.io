@@ -9,12 +9,9 @@ Open the named file in VS Code, then use `Ctrl + G` on Windows/Linux or `Cmd + G
 | 27 | `[INSERT YOUR CODING JOURNEY INTRODUCTION HERE]` | A short welcome introduction. |
 | 41 | `[INSERT YOUR BIOGRAPHY HERE]` | Your background and story. |
 | 42 | `[INSERT YOUR CODING JOURNEY GOALS HERE]` | Your goals for learning or coding. |
-| 49 | `[INSERT PROJECT PREVIEW IMAGE HERE]` | A preview image placeholder for your selected project. |
-| 52 | `[INSERT PROJECT TITLE HERE]` | The project name shown on the Home page tile. |
-| 57 | `[INSERT SKILLS PREVIEW IMAGE HERE]` | A preview image placeholder for Skills. |
-| 60 | `[INSERT SKILLS TILE HEADING HERE]` | A title for the Skills preview tile. |
-| 65 | `[INSERT ACHIEVEMENTS PREVIEW IMAGE HERE]` | A preview image placeholder for Achievements. |
-| 68 | `[INSERT ACHIEVEMENTS TILE HEADING HERE]` | A title for the Achievements preview tile. |
+| 48 | `[INSERT PROJECT PREVIEW IMAGE HERE]` | A preview image placeholder for your selected project. |
+| 52 | `[INSERT SKILLS PREVIEW IMAGE HERE]` | A preview image placeholder for Skills. |
+| 56 | `[INSERT ACHIEVEMENTS PREVIEW IMAGE HERE]` | A preview image placeholder for Achievements. |
 
 ### Adding your full Home-page background image
 
@@ -26,7 +23,7 @@ The image will fill the complete landing area. A dark overlay keeps the white te
 
 ### Adding real images to the Home-page tiles
 
-Replace the complete image placeholder `<div>` on line 49, 57, or 65 with:
+Replace the complete image placeholder `<div>` on line 48, 52, or 56 with:
 
 ```html
 <img src="images/[INSERT IMAGE FILE NAME HERE]" alt="[INSERT IMAGE DESCRIPTION HERE]">
