@@ -7,7 +7,7 @@ Open a file in VS Code and press `Cmd + G` on Mac (`Ctrl + G` on Windows/Linux) 
 | Line | What you can change |
 | --- | --- |
 | 27 | The short welcome sentence under your name. |
-| 41–43 | Your biography, current robotics work, and the link to your shared photo journal. |
+| 41–43 | Your MakerWorks biography, current robotics work, and the link to your shared photo journal. |
 | 50 | Projects tile photo. |
 | 54 | Skills tile photo. |
 | 58 | Achievements tile photo. |
@@ -18,10 +18,10 @@ The full landing-page background is set by `--hero-image` on line 11 of `style.c
 
 | Line | What you can change |
 | --- | --- |
-| 34–42 | VEX IQ photo, summary, and photo-journal button. |
-| 48–56 | SO-101 photo, summary, and photo-journal button. |
+| 34–42 | VEX IQ photo, summary, and link to its own page. |
+| 48–56 | SO-101 photo, summary, and link to its own page. |
 | 62 | Replace `[ADD OPEN DUCK MINI PHOTO HERE]` with an actual image. |
-| 67–70 | Open Duck Mini V2 details and photo-journal button. |
+| 67–70 | Open Duck Mini V2 details and link to its own page. |
 
 To add your Open Duck photo, put the file in `images/` and replace the whole placeholder `<div>` on line 62 with:
 
@@ -29,7 +29,17 @@ To add your Open Duck photo, put the file in `images/` and replace the whole pla
 <img src="images/your-open-duck-photo.jpg" alt="Open Duck Mini V2 robot" loading="lazy">
 ```
 
-The three buttons currently open your shared Google Photos album. When you have a separate repository or project gallery, replace the relevant button's `href` with its exact URL and update its text.
+The three buttons open `vex-iq.html`, `so-101.html`, and `open-duck-mini.html`. Each detail page links back to Projects. The VEX IQ and SO-101 detail pages also link to your shared photo journal.
+
+## Individual project pages
+
+| Page | What you can change |
+| --- | --- |
+| `vex-iq.html`, lines 34–45 | Main photo, description, and photo-journal link. |
+| `so-101.html`, lines 34–44 | Main photo, setup description, and photo-journal link. |
+| `open-duck-mini.html`, lines 34–42 | Photo placeholder, setup description, and next milestone. |
+
+When you add an Open Duck Mini photo, replace the placeholder `<div>` in both `projects.html` (line 62) and `open-duck-mini.html` (line 34) with an `<img>` element using the same relative path.
 
 ## Skills — `skills.html`
 
