@@ -6,13 +6,20 @@ Open a file in VS Code and press `Cmd + G` on Mac (`Ctrl + G` on Windows/Linux) 
 
 | Line | What you can change |
 | --- | --- |
-| 27 | The short welcome sentence under your name. |
-| 41–44 | Your MakerWorks biography, second-year VEX result, photo journal, and GitHub link. |
-| 51 | Projects tile photo (16:9). |
-| 55 | Skills tile photo (4:3). |
-| 59 | Achievements tile photo (4:3). |
+| 27–28 | The welcome title and short sentence beside the portrait slot. |
+| 35 | Replace `[ADD PORTRAIT PHOTO HERE]` with your portrait photo. |
+| 46–49 | Your MakerWorks biography, second-year VEX result, photo journal, and GitHub link. |
+| 56 | Projects tile photo (16:9). |
+| 60 | Skills tile photo (4:3). |
+| 64 | Achievements tile photo (4:3). |
 
-The full landing-page background is set by `--hero-image` on line 11 of `style.css`. Replace its path if you choose another landscape photo.
+The landing-page hero has a black background and a 3:4 portrait frame. Put a portrait photo in `images/`, then replace the whole placeholder `<div>` on line 35 with:
+
+```html
+<img src="images/your-portrait.jpg" alt="Portrait of Vivaan Saraf">
+```
+
+The portrait frame uses `object-fit: cover`, so the photo keeps its proportions on laptop, tablet, and phone screens.
 
 ## Projects — `projects.html`
 
