@@ -68,6 +68,7 @@ a { color: inherit; }
 h1, h2, p { margin-top: 0; }
 h1, h2 { line-height: 1.08; letter-spacing: -0.045em; }
 h1 { max-width: 16ch; margin-bottom: 1.2rem; font-size: clamp(2.35rem, 6vw, 4.8rem); }
+.hero h1 { max-width: 100%; }
 h1 span { color: var(--cyan); }
 h2 { margin-bottom: 0.8rem; font-size: clamp(1.4rem, 3vw, 2.25rem); }
 h3 { margin: 1.7rem 0 0.75rem; color: var(--text); font-size: 1rem; line-height: 1.3; }
