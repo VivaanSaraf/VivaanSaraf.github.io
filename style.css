@@ -168,6 +168,8 @@ figcaption { padding: 0.55rem 0.8rem; color: var(--muted); font-size: 0.72rem; o
 .card-content .button { align-self: flex-start; margin-top: auto; }
 
 .project-detail { padding-top: 2rem; }
+.project-explainer { padding-top: 0; padding-bottom: 1.5rem; }
+.project-explainer .info-panel > p:last-child { max-width: 78ch; margin: 0; font-size: 0.95rem; }
 .project-detail-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 1.5rem; align-items: start; }
 .project-detail .media-slot { overflow: hidden; border: 1px solid var(--line); border-radius: 1rem; }
 .project-detail .media-slot > img { height: clamp(280px, 42vw, 520px); }
