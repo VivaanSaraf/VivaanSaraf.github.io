@@ -37,11 +37,11 @@ The five buttons open `vex-iq.html`, `so-101.html`, `open-duck-mini.html`, `dron
 
 | Page | What you can change |
 | --- | --- |
-| `vex-iq.html`, lines 31–35 | Beginner explanation of VEX IQ; your build story starts at line 49. |
-| `so-101.html`, lines 31–35 | Beginner explanation of robot arms; your setup story starts at line 49. |
-| `open-duck-mini.html`, lines 31–35 | Beginner explanation of the walking robot; your setup story starts at line 49. |
-| `drone.html`, lines 31–64 | Beginner explanation, then your photo, exact parts and test details, and gallery placeholders. |
-| `arduino-robot.html`, lines 31–66 | Beginner explanation, then your build details and gallery placeholders. |
+| `vex-iq.html`, lines 31–35 and 48–51 | Beginner explanation, followed by your build and testing story. |
+| `so-101.html`, lines 31–35 and 48–51 | Beginner explanation, followed by the arm-configuration process. |
+| `open-duck-mini.html`, lines 31–35 and 48–51 | Beginner explanation, followed by setup progress and the next walking milestone. |
+| `drone.html`, lines 31–35 and 48–49 | Beginner explanation and your story; fill in the bracketed build and test details on line 49. |
+| `arduino-robot.html`, lines 31–35 and 48–51 | Beginner explanation and your build story; add the exact obstacle response and code on line 50. |
 
 When you add a project photo, replace the placeholder `<div>` in both `projects.html` and the matching detail page with an `<img>` element using the same relative path.
 
